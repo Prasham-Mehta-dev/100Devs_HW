@@ -1,0 +1,119 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+html{
+  font-size: 75%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+  clear: both;
+  display: block;
+}
+
+header{
+  background: black;
+  height: 50px;
+  font-size: 1.5rem;
+}
+
+nav *{
+  float: left;
+  width: 10%;
+  color: white;
+  display: block;
+}
+
+nav ul{
+  width: 65%;
+}
+
+ul li{
+  border-left: 1px solid gray;
+  padding: 5px;
+}
+
+nav form input{
+   width: 100%;
+   margin-top: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+.main-content {
+background-image: url('https://helyefab.github.io/images-repo/BBCHomepage/biden.jpg');
+background-position: center;
+background-repeat: no-repeat;
+background-size: auto;
+color: white;
+min-height: 80%;
+}
+
+.main-content, .sidebar{
+  width: 50%;
+  float: left;
+  height: 250px;
+  display: block;
+}
+
+main > section + section section{
+  width: 50%;
+  float: left;
+  height: 50%;
+}
+
+span{
+  text-transform: uppercase;
+}
+
+.secondary section{
+  float: left;
+  width: 33.3333%;
+  display: block;
+}
+
+.welcome{
+  text-transform: capitalize;
+}
+
+.date{
+  text-transform: capitalize;
+  float: right;
+}
+
+main span, .secondary span{
+  border-left: 3px solid red;
+  padding-left: 5px;
+}
+
+.content2{
+  background-image: url('https://ychef.files.bbci.co.uk/1600x900/p08zctxq.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.secondary{
+  border-left: 3px solid red;
+  padding-left: 7px;
+  clear: left;
+}
+

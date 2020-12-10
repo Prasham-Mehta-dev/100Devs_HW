@@ -1,0 +1,359 @@
+
+  ========================================
+  Style Reset START
+  ========================================
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*
+  ========================================
+  Style Reset END
+  ========================================
+
+  ========================================
+  START CSS CODING . . . BEGIN!
+  ========================================
+
+  ========================================
+  GRID
+  ========================================
+*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*
+  ========================================
+  BASE COLORS FONTS & BACKGROUND
+  ========================================
+*/
+
+html{
+  font-size: 62.5%;
+}
+body{
+  font-family: 'Lato', sans-serif;
+  background: #f5f9fc;
+  color: #2e4457;
+}
+p, li, button, .tagline{
+  font-size: 2rem;
+}
+
+.tagline{
+  font-variant: all-small-caps;
+  color: #8da1b3;
+}
+
+h2{
+  font-weight: bold;
+  font-size: 5rem;
+  line-height: 6rem;
+  padding: 4% 0;
+}
+
+.logo{
+  font-weight: bold;
+  font-size:3rem;
+  float: left;
+}
+
+li, button{
+  padding: 1rem 2.5rem;
+  text-align: center;
+}
+
+h3, .link{
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 2rem 0;
+}
+
+.link{
+  font-size: 2rem;
+}
+
+.card p, p{
+  line-height: 3rem;
+  padding-bottom: 2.5rem;
+}
+
+  {/*
+  ========================================
+  LAYOUT MAIN - PADDIN N STUFF
+  ========================================
+*/}
+header, .wrapper, nav, button, section, h1{
+  margin: 0 auto;
+}
+
+header{
+  width: auto;
+  padding:1% 2% 3% 2%;
+  clear: both;
+}
+
+nav{
+float: left;
+width: 80%;
+padding: .85% 15%;
+text-align: center;
+}
+
+.tinyWrapper{
+  width: 10%;
+  height: auto;
+  float: left;
+  display: inline;
+}
+
+.infoWrapper{
+  width: 100%;
+  height: auto;
+  padding: 1% 0 1% 4%;
+}
+
+.infoMain{
+  width: 45%;
+  float: left;
+  padding: 5% 15% 0 5%;
+}
+
+.buttonWrapper, p{
+  clear: both;
+  padding: 1%;
+}
+
+.infoImgWrapper{
+  float: right;
+  width: 55%;
+  height: 40vw;
+  contain: content;
+}
+.infoImg{
+  height: 100%;
+  min-height: 30rem;
+  float: right;
+}
+
+.infoImgAlt{
+  height: 100%;
+  display: none;
+}
+
+.infoCards{
+  clear: both;
+  padding: 4% 4%;
+}
+
+.card{
+  width: 24%;
+  height: auto;
+  padding: 0 1%;
+  float: left;
+}
+
+main{
+  clear: both;
+}
+  /*
+  ========================================
+  LAYOUT - NITTY GRITTY
+  ========================================
+*/
+
+
+.tinyWrapper h1{
+  padding: 2.5% 0;
+}
+
+li{
+  display: inline-block;
+  padding: 0 3rem;
+}
+
+header button{
+  float: right;
+}
+
+input, main button{
+  float: left;
+  margin: 0 auto;
+}
+
+/*
+  ========================================
+  SPECIFIC ELEMENT STYLING
+  ========================================
+*/
+
+
+.imgMini{
+  height: 4rem;
+}
+
+button{
+  background: #2e4457;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-weight: 400;
+}
+
+input{
+  background-color: #e1e9f0;
+  background: linear-gradient(0.25turn, #c2cbd3, #e1e9f0 30%);
+  border: 0 solid #e1e9f0;
+  border-radius: 3px;
+  padding: 1.3rem 2.5rem;
+}
+/*
+  ========================================
+  INTERATCIVE STUFFS
+  ========================================
+*/
+a:link, a:visited{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover{
+  color:#a6b9c6;
+  transition: 0.3s;
+}
+/*
+  ========================================
+  MEDIA QUERIES
+  ========================================
+*/
+@media all and (max-width: 3000px) and (min-width: 1900px){
+  .giantWrapper{
+    padding-left: 10%;
+    transition: .3s;
+  }
+}
+
+@media all and (max-width: 1400px){
+  .infoMain{
+    padding-right: 10%;
+  }
+  .infoImg{
+    padding-top: 2%;
+  }
+  li{
+    display: inline-block;
+    padding: 0 2rem;
+  }
+}
+
+@media all and (max-width: 1150px) and (min-width: 850px){
+  .infoMain, .infoImgWrapper, .infoWrapper{
+    float: none;
+    padding: 3% 0;
+    width:70%;
+    height: auto;
+  }
+  .buttonWrapper{
+    width: 100%;
+    padding: 0 30%;
+  }
+  .infoImg{
+    display: none;
+  }
+  .infoImgAlt{
+    display: block;
+    width: 100%;
+    float: left;
+    float: none;
+  }
+  input{
+    width: 30rem;
+  }
+  li{
+    display: inline-block;
+    padding: 0 1rem;
+  }
+  nav{
+    padding: .85% 10%;
+  }
+}
+
+@media all and (max-width: 849px){
+  ul, header button{
+    display: none;
+  }
+  .logo{
+    border-bottom: 1px solid grey;
+  }
+  .tinyWrapper{
+    width: 100%;
+    padding: 3% 40%;
+  }
+  .logo{
+    text-align: center;
+  }
+  .infoMain, .infoImgWrapper, .card{
+    clear: both;
+    float: none;
+    width: 100%;
+    padding: 2% 5%;
+  }
+  .infoImgWrapper{
+    float: right;
+    height: 350px;
+        padding-right: none;
+  }
+  .infoImg{
+    display: block;
+    float: right;
+
+  }
+  .infoImgAlt{
+    display: none;
+  }
+  .card{
+    padding-top: 4rem;
+  }
+}

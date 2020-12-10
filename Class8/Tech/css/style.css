@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap');
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+nav,aside{
+  width:10%;
+}
+
+body{
+  font-size: 62.5%;
+  font-family: 'Questrial', sans-serif;
+  /* display: block; */
+}
+
+.logo{
+  margin: 3% 0 0 3%;
+}
+
+nav {
+  margin: 1% 0 0 .5%;
+  width: 15%;
+  float: left;
+  display: block;
+}
+
+nav h3{
+  color: rgb(255,166,0);
+  margin: 0 0 0 4%;
+  padding: 2% 0 0 0;
+  font-size: 1.8em;
+  font-weight: 800;
+}
+
+ul li{
+  text-decoration: none;
+  font-size: 2em;
+  line-height: 2em;
+  list-style: none;
+  color: rgb(190, 190, 190);
+  margin: 0 0 0 4%;
+}
+
+.search{
+  border: none;
+  margin: 0 0 0 4%;
+  width: 25%;
+  font-size: 1rem;
+}
+
+.fa-search{
+  position: absolute;
+  margin-top: 4px;
+}
+
+.main-content{
+  width: 50%;
+  margin: 0 0 0 1%;
+  float: left;
+  display: block;
+}
+
+.lower > section, .lower > section + section{
+  width: 50%;
+  float: left;
+}
+
+section h1 + p{
+  color: rgba(0, 0, 0,0.6);
+  font-size: 2em;
+  padding: 2% 0 2% 0;
+}
+
+.crunch{
+  color: rgb(230,176,35);
+  padding: 2% 0 1% 0;
+  margin: 1% 0 0 0;
+  font-size: 2em;
+}
+
+.main-content h1{
+  font-size: 4em;
+  font-weight: 800;
+}
+
+.main-image{
+  width: 100%;
+  height: 300px;
+  float: left;
+  margin: 1% 1% 4% 0;
+}
+
+.lower{
+  width: 50%;
+}
+
+.side-header{
+  font-size: 2em;
+  font-weight: 500;
+  color: rgba(0,0,0,.9);
+}
+
+.mini-heads{ 
+  font-weight: bold;
+  font-size: 2em;
+  padding: 5% 1% 1% 0;
+}
+
+.author{
+  font-size: 1.5em;
+  color: rgba(0 , 0 ,0 , .9);
+}
+
+.author + span{
+  font-size: 1em;
+  font-weight: 300;
+  color: rgba(0 , 0 ,0 , .7);
+}
+
+.lower section + section{
+  width: 50%;
+  float: left;
+  font-size: 1.5em;
+}
+
+aside{
+  float: left;
+  width: 30%;
+}

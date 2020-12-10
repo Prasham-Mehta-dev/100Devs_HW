@@ -1,0 +1,62 @@
+/******************************************
+/* HOT GARBAGE - PLEASE DON'T MIMIC THIS CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+h1, h2{
+  text-align: center;
+}
+/* img{
+  display: block;
+  height: 300px;
+  margin: 0 auto;
+}
+ul{
+  width: 100px;
+  height: 200px;
+  border: 3px solid black;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+}
+li{
+  text-align: center;
+  width: 94px;
+  height: 49px;
+  border: 1px solid black;
+} */
+
+table{
+  text-align: center;
+  margin: 0 auto;
+  width: 30%;
+  height: 30rem;
+  font-size: 1.5rem;
+}
+
+td{
+  margin: 1px;
+  border: 1px solid black;
+  width: 25%;
+}
+
+#add{
+  background-image: url('https://i.kym-cdn.com/entries/icons/mobile/000/033/176/tempsnip1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#add:hover{
+  transform: scale(2);
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
