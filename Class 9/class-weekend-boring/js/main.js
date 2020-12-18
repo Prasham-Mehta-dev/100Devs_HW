@@ -21,9 +21,9 @@ document.querySelector('#check').addEventListener('click', check)
 
 function check(){
   
-  const day_input = document.querySelector('#day').value
+  const day = document.querySelector('#day').value.toLowerCase();
 
-  day = day_input.toLowerCase();
+  
 
   if(day == "tuesday" || day == "tue" || day == "thur" || day == "thursday") {
   alert("CLASS YAYYYYY!!")
