@@ -37,9 +37,11 @@ table{
   text-align: center;
   margin: 0 auto;
   width: 30%;
-  height: 30rem;
+  height: 20rem;
   font-size: 1.5rem;
+  border: 3px solid black;
 }
+
 
 td{
   margin: 1px;
@@ -47,15 +49,21 @@ td{
   width: 25%;
 }
 
-#add{
+input{
+  border: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* #add{
   background-image: url('https://i.kym-cdn.com/entries/icons/mobile/000/033/176/tempsnip1.jpg');
   background-size: cover;
   background-position: center;
-}
+} */
 
-#add:hover{
+/* #add:hover{
   transform: scale(2);
-}
+} */
 
 /******************************************
 /* ADDITIONAL STYLES
